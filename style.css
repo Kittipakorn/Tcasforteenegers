@@ -39,7 +39,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 2rem;
     }
 }
@@ -49,7 +49,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 2rem;
     }
 }
@@ -59,7 +59,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 2rem;
     }
 }
@@ -69,7 +69,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 2rem;
     }
 }
@@ -79,7 +79,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 2rem;
     }
 }
@@ -88,16 +88,16 @@ nav {
     background-color: #E8E8E8;
     margin: 0;
     top: 0;
-    font-size: 3vw;
+    font-size: 3vh;
     & .text {
         padding: 2rem;
         & .ask {
             color: green;
-            font-size: 3vw;
+            font-size: 3vh;
         }
         & .ans {
             color: black;
-            font-size: 2.5vw;
+            font-size: 2.5vh;
         }
     }
 }
@@ -107,7 +107,7 @@ nav {
     margin: 0;
     top: 0;
     & .text {
-        font-size: 2vw;
+        font-size: 2vh;
         padding: 2rem;
         text-align: center;
     }
