@@ -183,30 +183,8 @@ header {
     display: block !important; 
     & a {
         margin-top: 0.8rem;
-        font-size: 1rem;
         margin-bottom: 0.8rem;
-        text-decoration: none;
-        color: gray;
         display: grid;
-    }
-
-    & a:hover {
-        color: black;
-    }
-
-    & a:after {
-        content: "";
-        background-color: green;
-        position: absolute;
-        height: 3px;
-        width: 0%;
-        left: 0;
-        bottom: -6px;
-        transition: 0.3s ease-in-out;
-    }
-
-    & a:hover:after {
-        width: 100%;
     }
   }
 
