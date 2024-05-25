@@ -12,7 +12,7 @@ html {
 
 header {
     padding: 1.5vw;
-    background-color: #ABFCC0;
+    background-color: #C6EBC9;
     position: sticky;
     width: 100%;
     top: 0;
@@ -44,7 +44,7 @@ header {
 
     & a:after {
         content: "";
-        background-color: green;
+        background-color: #70AF85;
         position: absolute;
         height: 3px;
         width: 0%;
@@ -59,19 +59,14 @@ header {
 }
 
 .logo {
-    color: green;
+    color: #88AB8E;
     text-decoration: none;
     font-size: 2.5vh;
 }
 
-.logo .scrolled{
-    color: rebeccapurple;
-}
-
 .home {
-    background-color: #ABFCC0;
-    margin: 0;
-    top: 0;
+    background-color: #C6EBC9;
+    min-height: 100vh;
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -79,9 +74,8 @@ header {
 }
 
 .page1 {
-    background-color: #E8E8E8;
-    margin: 0;
-    top: 0;
+    background-color: #F0E2D0;
+    min-height: 100vh;
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -89,9 +83,8 @@ header {
 }
 
 .page2 {
-    background-color: #ABFCC0;
-    margin: 0;
-    top: 0;
+    background-color: #C6EBC9;
+    min-height: 100vh;
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -99,9 +92,8 @@ header {
 }
 
 .page3 {
-    background-color: #E8E8E8;
-    margin: 0;
-    top: 0;
+    background-color: #F0E2D0;
+    min-height: 100vh;
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -109,9 +101,8 @@ header {
 }
 
 .page4 {
-    background-color: #ABFCC0;
-    margin: 0;
-    top: 0;
+    background-color: #C6EBC9;
+    min-height: 100vh;
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -119,14 +110,13 @@ header {
 }
 
 .page5 {
-    background-color: #E8E8E8;
-    margin: 0;
-    top: 0;
+    background-color: #F0E2D0;
+    min-height: 100vh;
     font-size: 3vh;
     & .text {
         padding: 2rem;
         & .ask {
-            color: green;
+            color: #70AF85;
             font-size: 1.5rem;
         }
         & .ans {
@@ -137,16 +127,24 @@ header {
 }
 
 .aboutus {
-    background-color: gray;
-    margin: 0;
-    top: 0;
+    background-color: white;
+    min-height: 100vh;
     & .text {
-        font-size: 2vh;
+        font-size: 1.125rem;
         padding: 2rem;
         text-align: center;
     }
+}
 
+.footer {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: gray;
+    min-height: 15vh;
+    text-align: center;
     & .open-sorce {
+        display: block;
+        margin: auto;
          & .github {
             width: 12vh;
             margin: auto;
