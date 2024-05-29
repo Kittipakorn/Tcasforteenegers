@@ -12,7 +12,7 @@ html {
 
 header {
     padding: 1.5vw;
-    background-color: #C6EBC9;
+    background-color: #D1E2C7;
     position: sticky;
     width: 100%;
     top: 0;
@@ -65,11 +65,21 @@ header {
 }
 
 .home {
-    background-color: #C6EBC9;
+    background-color: #D1E2C7;
     min-height: 100vh;
-    & .text {
-        font-size: 1.125rem;
-        padding: 2rem;
+    display: flex;
+    & .slide1 {
+        margin: auto;
+        justify-content: space-between;
+        display: flex;
+        & .text {
+            font-size: 1.125rem;
+            padding: 2rem;
+        }
+        & .tcas67 {
+            width: 40vw;
+            margin: auto;
+        }
     }
 }
 
@@ -189,6 +199,11 @@ header {
 @media only screen and (max-width: 833px){
     .menu {
         display: none;
+    }
+    .home {
+        & .slide1 {
+            display: grid;
+        }
     }
 }
 
