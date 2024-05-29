@@ -202,9 +202,8 @@ header {
     }
     .home {
         & .slide1 {
-            display: grid;
             & .tcas67 {
-                width: 53vw;
+                display: none;
             }
         }
     }
