@@ -11,6 +11,5 @@ function toggleHam(x) {
     }
     else {
         myMenu.className = "menu";
-        window.scrollY=0;
     }
   }
