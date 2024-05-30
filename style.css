@@ -20,7 +20,7 @@ header {
 }
 
 .sticky {
-    background-color: white;
+    background-color: #F4F4F4;
     opacity: 0.9;
 }
 
@@ -84,7 +84,7 @@ header {
 }
 
 .page1 {
-    background-color: #F0E2D0;
+    background-color: #F4F4F4;
     min-height: 100vh;
     & .text {
         font-size: 1.125rem;
