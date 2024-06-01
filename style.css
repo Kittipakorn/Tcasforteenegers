@@ -428,10 +428,19 @@ header {
     .aboutus .wrapper .carousel{
         grid-auto-columns: calc((100% / 2) + 10px);
     }
+    .aboutus .wrapper2 .carousel2{
+        grid-auto-columns: calc((100% / 3) + 15px);
+    }
 }   
 
 @media only screen and (max-width: 619px) {
     .aboutus .wrapper .carousel{
         grid-auto-columns: calc((100% / 1) + 25px);
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    .aboutus .wrapper2 .carousel2{
+        grid-auto-columns: calc((100% / 2) + 25px);
     }
 }
