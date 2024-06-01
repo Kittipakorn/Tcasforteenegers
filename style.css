@@ -10,10 +10,45 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
+.bg {
+    width: 100%;
+    height: 722%;
+    background-color: #333;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.popup {
+    position: fixed;
+    top: 15vh;
+    left: 33vw;
+    width: 50%;
+    max-width: 500px;
+
+    & .meme {
+        border-radius: 5%;
+        width: 100%;
+    }
+
+    & .close {
+        max-width: 30px;
+        border-radius: 50%;
+        background-color: white;
+        width: 10%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+}
+
 header {
     padding: 1.5vw;
     background-color: #D1E2C7;
-    position: sticky;
     width: 100%;
     top: 0;
     transition: 0.4s;
@@ -22,6 +57,7 @@ header {
 .sticky {
     background-color: #F4F4F4;
     opacity: 0.9;
+    position: sticky;
 }
 
 .nav-con {
@@ -68,14 +104,17 @@ header {
     background-color: #D1E2C7;
     min-height: 100vh;
     display: flex;
+
     & .slide1 {
         margin: auto;
         justify-content: space-between;
         display: flex;
+
         & .text {
             font-size: 1.125rem;
             padding: 2rem;
         }
+
         & .tcas67 {
             width: 40vw;
             margin: auto;
@@ -87,10 +126,12 @@ header {
     background-color: #F4F4F4;
     min-height: 100vh;
     display: flex;
+
     & .slide2 {
         margin: auto;
         justify-content: space-between;
         display: flex;
+
         & .text {
             font-size: 1.125rem;
             padding: 2rem;
@@ -101,6 +142,7 @@ header {
 .page2 {
     background-color: #C6EBC9;
     min-height: 100vh;
+
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -110,6 +152,7 @@ header {
 .page3 {
     background-color: #F0E2D0;
     min-height: 100vh;
+
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -119,6 +162,7 @@ header {
 .page4 {
     background-color: #C6EBC9;
     min-height: 100vh;
+
     & .text {
         font-size: 1.125rem;
         padding: 2rem;
@@ -129,12 +173,15 @@ header {
     background-color: #F0E2D0;
     min-height: 100vh;
     font-size: 3vh;
+
     & .text {
         padding: 2rem;
+
         & .ask {
             color: #70AF85;
             font-size: 1.5rem;
         }
+
         & .ans {
             color: black;
             font-size: 1.125rem;
@@ -148,23 +195,28 @@ header {
     justify-content: center;
     background-color: #F4F4F4;
     min-height: 100vh;
+
     & .headline {
         font-size: 2rem;
     }
+
     & .headline {
         display: flex;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;
     }
+
     & .wrapper {
         width: 100vw;
+
         & .carousel {
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: calc((100% / 5) - 15px);
             gap: 12px;
             overflow: hidden;
-            & .card{
+
+            & .card {
                 list-style: none;
                 height: 400px;
                 background-color: #ECECEC;
@@ -174,6 +226,7 @@ header {
                 justify-content: center;
                 flex-direction: column;
                 gap: 1rem;
+
                 & .img {
                     background-color: #70AF85;
                     width: 148px;
@@ -183,6 +236,7 @@ header {
                     justify-content: center;
                     border-radius: 50%;
                     margin: 1rem;
+
                     & img {
                         width: 140px;
                         height: 140px;
@@ -191,12 +245,14 @@ header {
                         border: 4px solid #ECECEC;
                     }
                 }
+
                 & .ig {
                     color: #70AF85;
                 }
             }
         }
     }
+
     & .space {
         width: 140px;
     }
@@ -208,54 +264,61 @@ header {
     background-color: gray;
     min-height: 15vh;
     text-align: center;
+
     & .open-sorce {
         display: block;
         margin: auto;
-         & .github {
+
+        & .github {
             width: 12vh;
             margin: auto;
             display: flex;
-            align-items: center;
-         }
+        }
     }
 }
 
 .container {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 4px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     transform: translate(0, 7px) rotate(-45deg);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     transform: translate(0, -7px) rotate(45deg);
-  }
-  
-  .menu-active {
-    display: block !important; 
+}
+
+.menu-active {
+    display: block !important;
+
     & a {
         margin-top: 0.8rem;
         margin-bottom: 0.8rem;
         display: grid;
     }
-  }
+}
 
-@media only screen and (max-width: 833px){
+@media only screen and (max-width: 833px) {
     .menu {
         display: none;
     }
+
     .home {
         & .slide1 {
             & .tcas67 {
@@ -265,7 +328,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 833px){
+@media only screen and (min-width: 833px) {
     .ham-menu {
         display: none;
     }

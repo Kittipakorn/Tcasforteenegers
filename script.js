@@ -1,3 +1,13 @@
+let popup = document.getElementById("pop-up");
+let bg = document.getElementById("bg");
+let body = document.getElementById("top-page");
+
+function closefn(){
+    popup.style.display = "none";
+    bg.style.display = "none";
+    body.style.overflow = "auto";
+}
+
 window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
