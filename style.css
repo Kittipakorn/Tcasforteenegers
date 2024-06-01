@@ -428,11 +428,13 @@ header {
     .aboutus .wrapper .carousel{
         grid-auto-columns: calc((100% / 2) + 10px);
     }
+}   
+
+@media only screen and (max-width: 1000px) { 
     .aboutus .wrapper2 .carousel2{
         grid-auto-columns: calc((100% / 3) + 15px);
     }
 }   
-
 @media only screen and (max-width: 619px) {
     .aboutus .wrapper .carousel{
         grid-auto-columns: calc((100% / 1) + 25px);
