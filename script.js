@@ -65,3 +65,43 @@ const dragging = (e) => {
 carousel.addEventListener("mousedown",draggStart);
 carousel.addEventListener("mousemove",dragging);
 document.addEventListener("mouseup",draggStop);
+
+let isDragging2 = isDragging;
+const carousel2 = document.querySelector(".carousel2");
+const FirstCardWidth2 = carousel2.querySelector(".card").offsetWidth;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const arrowBtns = document.querySelectorAll(".wrapper2 i");
+
+    if (arrowBtns && arrowBtns.length > 0) {
+        arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel2.scrollLeft += btn.id === "left" ? -FirstCardWidth : FirstCardWidth;
+            });
+        });
+    } else {
+        console.error('No arrow buttons found or arrowBtns is undefined');
+    }
+});
+
+
+const draggStart2 = (e) => {
+    isDragging2 = true;  
+    carousel2.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel2.scrollLeft;
+}
+
+const draggStop2 = () => {
+    isDragging = false;  
+    carousel2.classList.remove("dragging");
+}
+
+const dragging2 = (e) => {
+    if(!isDragging) return;
+    carousel2.scrollLeft = startScrollLeft  - (e.pageX-startX);
+}
+
+carousel2.addEventListener("mousedown",draggStart2);
+carousel2.addEventListener("mousemove",dragging2);
+document.addEventListener("mouseup",draggStop2);
