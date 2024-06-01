@@ -215,6 +215,7 @@ header {
         width: 80vw;
         margin-bottom: 100px;
         position: relative;
+        margin: auto;
         & i {
             height: 50px;
             width: 50px;
@@ -295,6 +296,7 @@ header {
         width: 80vw;
         bottom: 50px;
         position: relative;
+        margin: auto;
         & i {
             height: 50px;
             width: 50px;
