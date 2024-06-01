@@ -23,12 +23,12 @@ body {
 }
 
 .popup {
-    position: fixed;
-    top: 15vh;
-    left: 33vw;
-    width: 50%;
+    width: 70%;
     max-width: 500px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     & .meme {
         border-radius: 5%;
         width: 100%;
