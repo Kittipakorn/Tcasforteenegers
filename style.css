@@ -452,7 +452,9 @@ header {
     .aboutus .wrapper2 .carousel2{
         grid-auto-columns: calc((100% / 3) + 15px);
     }
-}   
+}
+
+/* mobile */
 @media only screen and (max-width: 619px) {
     .aboutus .wrapper .carousel{
         grid-auto-columns: calc((100% / 1) + 25px);
@@ -462,5 +464,8 @@ header {
 @media only screen and (max-width: 692px) {
     .aboutus .wrapper2 .carousel2{
         grid-auto-columns: calc((100% / 2) + 25px);
+    }
+    .home .slide1 .tcas67{
+        display: none;
     }
 }
