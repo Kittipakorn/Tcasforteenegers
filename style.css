@@ -58,6 +58,8 @@ header {
     background-color: #F4F4F4;
     opacity: 0.9;
     position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .nav-con {
@@ -224,7 +226,7 @@ header {
     & .wrapper {
         width: 80vw;
         margin-bottom: 100px;
-        position: relative;
+        position: static;
         margin: auto;
         & i {
             height: 50px;
@@ -305,7 +307,7 @@ header {
     & .wrapper2 {
         width: 80vw;
         bottom: 50px;
-        position: relative;
+        position: static;
         margin: auto;
         & i {
             height: 50px;
@@ -420,7 +422,6 @@ header {
     .menu {
         display: none;
     }
-
     .home {
         & .slide1 {
             display: grid;
