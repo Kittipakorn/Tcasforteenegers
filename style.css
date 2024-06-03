@@ -226,7 +226,7 @@ header {
     & .wrapper {
         width: 80vw;
         margin-bottom: 100px;
-        position: static;
+        position: relative;
         margin: auto;
         & i {
             height: 50px;
@@ -307,7 +307,7 @@ header {
     & .wrapper2 {
         width: 80vw;
         bottom: 50px;
-        position: static;
+        position: relative;
         margin: auto;
         & i {
             height: 50px;
