@@ -137,6 +137,8 @@ header {
 .page1 {
     background-color: #F4F4F4;
     min-height: 100vh;
+    justify-content: space-between;
+    margin: auto;
     display: flex;
     & .slide2 {
         margin: auto;
